@@ -58,6 +58,7 @@ $ notificator [name of the upstream] [module] [old version] [new version] [tag].
 
 Each tag is an own parameter.
 Stdout and Stderr will be redirected to the terminal.
+An example notificator can be found in the [doc directory](doc/notificator-example.sh).
 
 ## About upstreams
 
