@@ -22,6 +22,7 @@ func RunModules(cfg config.VersioncheckConfig, verDb *verdb.Verdb) (res RunnerRe
 		newVersion, err := mod.Run(us.Name, us.Parameters)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "[%s] Module failed\n", us.Name)
+			fmt.Fprintf(os.Stderr, "[%s] Message: %s\n", us.Name, err)
 			res.Failed = append(res.Failed, us.Name)
 			continue
 		}
