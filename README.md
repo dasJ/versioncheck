@@ -86,5 +86,8 @@ After implementing your module you need to add it to the array in [modules.go](m
 
 If you want to have you module merged, also add documentation to the [doc](doc/) directory.
 
-TODO Document existing modules
+## Implemented modules
+
+- [github](doc/github.md) - Checks for the latest GitHub release.
+
 TODO Error handling
