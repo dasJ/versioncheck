@@ -10,6 +10,7 @@ func initModules() map[string]versionModule {
 
 	mods := [...]versionModule{
 		modules.Github{},
+		modules.HttpHash{},
 	}
 	for _, mod := range mods {
 		mod.Init()

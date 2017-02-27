@@ -93,4 +93,5 @@ If you want to have you module merged, also add documentation to the [doc](doc/)
 ## Implemented modules
 
 - [github](doc/github.md) - Checks for the latest GitHub release.
+- [httphash](doc/httphash.md) - Compares sha512 hashes of websites.
 
