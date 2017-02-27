@@ -12,6 +12,7 @@ func initModules() map[string]versionModule {
 		modules.Github{},
 		modules.HttpHash{},
 		modules.PyPi{},
+		modules.Rubygems{},
 	}
 	for _, mod := range mods {
 		mod.Init()
