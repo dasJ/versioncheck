@@ -27,7 +27,7 @@ Create a configuration file like this:
 			"name": "Autoenv",
 			"module": "github",
 			"params": {
-				"namespace": "kennethreitz,
+				"namespace": "kennethreitz",
 				"project": "autoenv"
 			},
 			"tags": [ "aur", "dotfiles" ]
