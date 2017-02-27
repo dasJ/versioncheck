@@ -75,7 +75,16 @@ An upstream has these attributes:
 
 ## Implementing own modules
 
-TODO
+You can implement own modules by adding your own module file to the `modules` directory.
+As they all share a namespace, use specific names.
+
+All modules must extend [versionModule](moduleRunner/module.go).
+`Init` is called once for every module on startup, `Name` as well and should return the module name that is used in the upstream configuration.
+`Run` is executed once the module is actually needed, and should return the latest version. It takes the name of the upstream (for logging) and the custom parameters from the upstream configuration.
+
+After implementing your module you need to add it to the array in [modules.go](moduleRunner/modules.go).
+
+If you want to have you module merged, also add documentation to the [doc](doc/) directory.
 
 TODO Document existing modules
 TODO Error handling
