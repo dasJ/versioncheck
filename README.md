@@ -60,6 +60,10 @@ Each tag is an own parameter.
 Stdout and Stderr will be redirected to the terminal.
 An example notificator can be found in the [doc directory](doc/notificator-example.sh).
 
+The notificator will only be called for changed versions.
+It will not be called for added/removed upstreams or for errors.
+Errors can be found in Stderr.
+
 ## About upstreams
 
 An upstream is a project that versioncheck should track.
@@ -90,4 +94,3 @@ If you want to have you module merged, also add documentation to the [doc](doc/)
 
 - [github](doc/github.md) - Checks for the latest GitHub release.
 
-TODO Error handling
