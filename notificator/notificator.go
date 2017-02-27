@@ -19,6 +19,8 @@ func Notify(cfg config.VersioncheckConfig, res moduleRunner.RunnerResult) {
 			args := []string{
 				item.Name,
 				item.Module,
+				item.OldVersion,
+				item.NewVersion,
 			}
 			args = append(args, item.Tags...)
 			cmd := exec.Command(cfg.Notificator, args...)

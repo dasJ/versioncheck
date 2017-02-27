@@ -34,6 +34,8 @@ func RunModules(cfg config.VersioncheckConfig, verDb *verdb.Verdb) (res RunnerRe
 
 		if newVersion != oldVersion {
 			fmt.Printf("[%s] %s -> %s\n", us.Name, oldVersion, newVersion)
+			us.OldVersion = oldVersion
+			us.NewVersion = newVersion
 			verDb.UpdateVersion(us.Name, newVersion)
 			res.Changed = append(res.Changed, us)
 		}

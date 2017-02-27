@@ -6,6 +6,8 @@ type UpstreamConfig struct {
 	Module     string      `json:"module"`
 	Parameters interface{} `json:"params"`
 	Tags       []string    `json:"tags"`
+	OldVersion string      `json:"-"`
+	NewVersion string      `json:"-"`
 }
 
 // VersioncheckConfig is the main configuration of this application.
