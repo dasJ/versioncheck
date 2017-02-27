@@ -21,7 +21,7 @@ func main() {
 	}
 	defer verDb.Close()
 	// Run modules
-	res := moduleRunner.RunModules(cfg, verDb)
+	res := moduleRunner.RunModules(cfg, &verDb)
 	// Update version database
 	err = verDb.Write()
 	if err != nil {

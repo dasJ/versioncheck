@@ -9,7 +9,7 @@ import (
 
 // RunModules runs all modules
 // Could make this threaded, but I'm too lazy.
-func RunModules(cfg config.VersioncheckConfig, verDb verdb.Verdb) (res RunnerResult) {
+func RunModules(cfg config.VersioncheckConfig, verDb *verdb.Verdb) (res RunnerResult) {
 	modules := initModules()
 
 	for _, us := range cfg.Upstreams {
