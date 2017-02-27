@@ -62,9 +62,18 @@ An example notificator can be found in the [doc directory](doc/notificator-examp
 
 ## About upstreams
 
-TODO
+An upstream is a project that versioncheck should track.
+When versioncheck discovers a new upstream that wasn't there the last time, it the current version is silently added to the database.
+If you remove an upstream, the old version is silently removed from the database.
 
-## Implementing own upstreams
+An upstream has these attributes:
+
+- name. This name is a unique identifier for your upstream. When changed, the upstream is removed and re-added with the new name.
+- module. The module that is used to find the current version of the project.
+- parameters. These parameters configure the module and are module-specific.
+- tags. Tags are for your own information. They are forwarded to the notificator and can be parsed in any way.
+
+## Implementing own modules
 
 TODO
 
