@@ -94,4 +94,5 @@ If you want to have you module merged, also add documentation to the [doc](doc/)
 
 - [github](doc/github.md) - Checks for the latest GitHub release.
 - [httphash](doc/httphash.md) - Compares sha512 hashes of websites.
+- [pypi](doc/pypi.md) - Checks a PyPi package.
 
